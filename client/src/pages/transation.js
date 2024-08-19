@@ -19,6 +19,7 @@ export default function Transaction() {
                             <h5 className="card-title">User Information</h5>
                             <p className="card-text"><strong>Email:</strong> {user.email}</p>
                             <p className="card-text"><strong>UPI ID:</strong> {user.upi_id}</p>
+                            <p className="card-text"><strong>Balance:</strong> {user.balance}</p>
                         </div>
                     </div>
                 )}

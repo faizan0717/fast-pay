@@ -14,11 +14,11 @@ export default function Login() {
 
     axios.post('http://localhost:5000/api/login', user)
       .then(res => {
-        const { upi_id, message } = res.data;
+        const { upi_id, message ,balance} = res.data;
 
         // Store user info in local storage
 		console.log(">>>>>.",upi_id)
-        localStorage.setItem('user', JSON.stringify({ email, upi_id }));
+        localStorage.setItem('user', JSON.stringify({ email, upi_id, balance }));
 
         alert(message);
         navigate('/transaction'); // Navigate to the transaction page

@@ -39,6 +39,7 @@ function App() {
                                 <Nav className="ml-auto">
                                     {user ? (
                                         <>
+                                        <Nav.Link as={Link} to="/transaction">Home</Nav.Link>
                                             <NavDropdown title={<><i className="bi bi-person-circle"></i> {user.email}</>} id="nav-dropdown">
                                                 <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
                                             </NavDropdown>
